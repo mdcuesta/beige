@@ -1,4 +1,5 @@
-﻿using EnvDTE;
+﻿using Beige.AppHarbor.Client.Ui;
+using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.CommandBars;
 
@@ -25,11 +26,20 @@ namespace Beige
 
                 var newAppButton = (CommandBarButton) popUp.Controls.Add(MsoControlType.msoControlButton);
                 newAppButton.Caption = "Create New AppHarbor Application";
+                newAppButton.Click += newAppButton_Click;
 
                 var manageApplications = (CommandBarButton) popUp.Controls.Add(MsoControlType.msoControlButton);
                 manageApplications.Caption = "Manage Applications";
             }
             return _appHarborMenu;
+        }
+
+        private static void newAppButton_Click(CommandBarButton sender, ref bool handled)
+        {
+            var window = new System.Windows.Window();
+            var loginControl = new LoginControl();
+            window.Content = loginControl;
+            window.ShowDialog();
         }
     }
 }

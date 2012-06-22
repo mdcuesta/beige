@@ -42,6 +42,8 @@
     <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="RestSharp, Version=103.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\RestSharp.103.1\lib\net4\RestSharp.dll</HintPath>
@@ -49,8 +51,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
@@ -126,6 +130,10 @@
     <ProjectReference Include="..\AppHarbor.Net\AppHarbor.Net.csproj">
       <Project>{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}</Project>
       <Name>AppHarbor.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Beige.AppHarbor.Client.Ui\Beige.AppHarbor.Client.Ui.csproj">
+      <Project>{00DFEDCD-4E90-439C-B7D1-E689FE2A497D}</Project>
+      <Name>Beige.AppHarbor.Client.Ui</Name>
     </ProjectReference>
     <ProjectReference Include="..\Beige.AppHarbor.Client\Beige.AppHarbor.Client.csproj">
       <Project>{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}</Project>
