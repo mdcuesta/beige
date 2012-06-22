@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beige", "Beige\Beige.csproj", "{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHarbor.Net", "AppHarbor.Net\AppHarbor.Net.csproj", "{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beige.AppHarbor.Client", "Beige.AppHarbor.Client\Beige.AppHarbor.Client.csproj", "{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "001.AppHarbor.NET", "001.AppHarbor.NET", "{CCDEFC8B-A0A3-4374-8695-52239BA59FA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "002.Beige.AppHarbor.Client", "002.Beige.AppHarbor.Client", "{30D4AF44-FA1B-499F-AC95-B5B374A585C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "003.Beige", "003.Beige", "{47A80FBE-E6EF-44F2-82AC-C20BE0FCD144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADD606F-2E3C-4210-951F-F15E1E4ACD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6ADD606F-2E3C-4210-951F-F15E1E4ACD08} = {CCDEFC8B-A0A3-4374-8695-52239BA59FA3}
+		{2CAFEBC9-13E9-44B8-8D73-0FA434C9823A} = {30D4AF44-FA1B-499F-AC95-B5B374A585C0}
+		{D1A931E4-6EAE-4509-9E69-A62B78FD1CEB} = {47A80FBE-E6EF-44F2-82AC-C20BE0FCD144}
+	EndGlobalSection
+EndGlobal
