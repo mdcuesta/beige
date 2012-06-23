@@ -9,7 +9,7 @@ namespace Beige
     {
         private static CommandBarControl _appHarborMenu;
 
-        public static CommandBarControl GetAppHarborMenu(DTE2 applicationObject, AddIn addIn)
+        public static CommandBarControl GetAppHarborMenu(DTE2 applicationObject)
         {
             if (_appHarborMenu == null)
             {
@@ -24,22 +24,23 @@ namespace Beige
 
                 var popUp = (CommandBarPopup) _appHarborMenu;
 
+                //New AppHarbor Application
                 var newAppButton = (CommandBarButton) popUp.Controls.Add(MsoControlType.msoControlButton);
                 newAppButton.Caption = "Create New AppHarbor Application";
-                newAppButton.Click += newAppButton_Click;
+                newAppButton.Click += EventHandler.NewApplication;
 
+                //Manage Applications
                 var manageApplications = (CommandBarButton) popUp.Controls.Add(MsoControlType.msoControlButton);
                 manageApplications.Caption = "Manage Applications";
+                manageApplications.Click += EventHandler.ManageApplications;
+
             }
             return _appHarborMenu;
         }
 
-        private static void newAppButton_Click(CommandBarButton sender, ref bool handled)
+        public static CommandBarControl GetAppHarborSolutionContextMenu(DTE2 applicationObject)
         {
-            var window = new System.Windows.Window();
-            var loginControl = new LoginControl();
-            window.Content = loginControl;
-            window.ShowDialog();
+            return default(CommandBarControl);
         }
     }
 }

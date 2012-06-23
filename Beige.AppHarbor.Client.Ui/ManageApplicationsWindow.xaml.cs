@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Beige.AppHarbor.Client.Ui
 {
     /// <summary>
-    /// Interaction logic for LoginControl.xaml
+    /// Interaction logic for ManageApplicationsWindow.xaml
     /// </summary>
-    public partial class LoginControl : UserControl
+    public partial class ManageApplicationsWindow : Window
     {
-        public LoginControl()
+        public ManageApplicationsWindow()
         {
             InitializeComponent();
         }
